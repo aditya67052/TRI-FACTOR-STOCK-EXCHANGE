@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_products"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.winindo1.smallmedium.Products">
+
+    <Button
+        android:text="Cigarette"
+        android:textSize="18sp"
+        android:background="@drawable/round_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cig"
+        android:textColor="#FFFF4081"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
+
+    <Button
+        android:text="Beers"
+        android:textSize="18sp"
+        android:background="@drawable/round_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bee"
+        android:textColor="#FF00ddFF"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/cig"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp" />
+
+    <Button
+        android:text="Gums"
+        android:textSize="18sp"
+        android:background="@drawable/round_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gum"
+        android:textColor="#FFFF4081"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/bee"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Candies"
+        android:textSize="18sp"
+        android:background="@drawable/round_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cand"
+        android:textColor="#FF00ddFF"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/gum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Sodas and Chips"
+        android:textSize="18sp"
+        android:background="@drawable/round_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sod"
+        tools:ignore="HardcodedText"
+        android:textColor="#FFFF4081"
+        android:textStyle="bold"
+        android:layout_below="@+id/cand"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+
+</RelativeLayout>

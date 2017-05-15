@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.winindo1.smallmedium.Cart">
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Your Product Details"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_quality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Your Quantity"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded"
+        android:layout_below="@+id/editText_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        tools:ignore="InefficientWeight,ObsoleteLayoutParam"
+        android:layout_weight="0.18"
+        android:layout_below="@+id/editText_quality"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/insert"
+                android:text="Insert"
+                android:textColor="#FFFF4081"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_button"
+                android:onClick="submit"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/view"
+                android:text="View All"
+                android:textColor="#FF00ddFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_button1"
+                android:onClick="viewAll"
+                android:layout_below="@+id/name"
+                tools:ignore="HardcodedText" />
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Proceed Checkout"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/round_button1"-->
+                <!--android:onClick="buttonAction"-->
+                <!--android:textColor="#FF00ddFF"-->
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/delete"-->
+                <!--tools:ignore="HardcodedText" />-->
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Continue Shopping"-->
+                <!--android:textColor="#FFFF4081"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/round_button"-->
+                <!--android:onClick="buttonAction"-->
+                <!--android:id="@+id/cont"-->
+                <!--tools:ignore="HardcodedText" />-->
+        </LinearLayout>
+</RelativeLayout>

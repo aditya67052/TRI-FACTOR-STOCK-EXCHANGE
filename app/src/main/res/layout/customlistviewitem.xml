@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout1">
+
+    <TextView
+        android:id="@+id/custom_textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Product Name :"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/custom_textView_quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/custom_textView_name"
+        android:layout_marginTop="20dp"
+        android:text="Quality :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/custom_textView_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="id :"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:layout_marginLeft="124dp"
+        android:layout_marginStart="124dp"
+        android:layout_alignBaseline="@+id/custom_textView_name"
+        android:layout_alignBottom="@+id/custom_textView_name"
+        android:layout_toRightOf="@+id/custom_textView_name"
+        android:layout_toEndOf="@+id/custom_textView_name" />
+
+</RelativeLayout>
